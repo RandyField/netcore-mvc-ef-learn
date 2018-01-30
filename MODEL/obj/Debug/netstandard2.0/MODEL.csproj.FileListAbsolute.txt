@@ -1,0 +1,8 @@
+/home/randy/vscode/github/randy-net-core-sln/MODEL/bin/Debug/netstandard2.0/MODEL.deps.json
+/home/randy/vscode/github/randy-net-core-sln/MODEL/bin/Debug/netstandard2.0/MODEL.dll
+/home/randy/vscode/github/randy-net-core-sln/MODEL/bin/Debug/netstandard2.0/MODEL.pdb
+/home/randy/vscode/github/randy-net-core-sln/MODEL/obj/Debug/netstandard2.0/MODEL.csproj.CoreCompileInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/MODEL/obj/Debug/netstandard2.0/MODEL.AssemblyInfoInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/MODEL/obj/Debug/netstandard2.0/MODEL.AssemblyInfo.cs
+/home/randy/vscode/github/randy-net-core-sln/MODEL/obj/Debug/netstandard2.0/MODEL.dll
+/home/randy/vscode/github/randy-net-core-sln/MODEL/obj/Debug/netstandard2.0/MODEL.pdb

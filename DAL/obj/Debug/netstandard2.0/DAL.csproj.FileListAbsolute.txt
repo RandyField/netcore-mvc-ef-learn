@@ -1,0 +1,8 @@
+/home/randy/vscode/github/randy-net-core-sln/DAL/bin/Debug/netstandard2.0/DAL.deps.json
+/home/randy/vscode/github/randy-net-core-sln/DAL/bin/Debug/netstandard2.0/DAL.dll
+/home/randy/vscode/github/randy-net-core-sln/DAL/bin/Debug/netstandard2.0/DAL.pdb
+/home/randy/vscode/github/randy-net-core-sln/DAL/obj/Debug/netstandard2.0/DAL.csproj.CoreCompileInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/DAL/obj/Debug/netstandard2.0/DAL.AssemblyInfoInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/DAL/obj/Debug/netstandard2.0/DAL.AssemblyInfo.cs
+/home/randy/vscode/github/randy-net-core-sln/DAL/obj/Debug/netstandard2.0/DAL.dll
+/home/randy/vscode/github/randy-net-core-sln/DAL/obj/Debug/netstandard2.0/DAL.pdb

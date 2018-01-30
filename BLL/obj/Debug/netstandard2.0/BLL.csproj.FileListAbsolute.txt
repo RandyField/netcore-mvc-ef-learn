@@ -1,0 +1,8 @@
+/home/randy/vscode/github/randy-net-core-sln/BLL/bin/Debug/netstandard2.0/BLL.deps.json
+/home/randy/vscode/github/randy-net-core-sln/BLL/bin/Debug/netstandard2.0/BLL.dll
+/home/randy/vscode/github/randy-net-core-sln/BLL/bin/Debug/netstandard2.0/BLL.pdb
+/home/randy/vscode/github/randy-net-core-sln/BLL/obj/Debug/netstandard2.0/BLL.csproj.CoreCompileInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/BLL/obj/Debug/netstandard2.0/BLL.AssemblyInfoInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/BLL/obj/Debug/netstandard2.0/BLL.AssemblyInfo.cs
+/home/randy/vscode/github/randy-net-core-sln/BLL/obj/Debug/netstandard2.0/BLL.dll
+/home/randy/vscode/github/randy-net-core-sln/BLL/obj/Debug/netstandard2.0/BLL.pdb

@@ -1,0 +1,16 @@
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/Web.deps.json
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/Web.runtimeconfig.json
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/Web.runtimeconfig.dev.json
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/Web.dll
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/Web.pdb
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/BLL.dll
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/DAL.dll
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/MODEL.dll
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/BLL.pdb
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/DAL.pdb
+/home/randy/vscode/github/randy-net-core-sln/Web/bin/Debug/netcoreapp2.0/MODEL.pdb
+/home/randy/vscode/github/randy-net-core-sln/Web/obj/Debug/netcoreapp2.0/Web.csproj.CoreCompileInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/Web/obj/Debug/netcoreapp2.0/Web.AssemblyInfoInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/Web/obj/Debug/netcoreapp2.0/Web.AssemblyInfo.cs
+/home/randy/vscode/github/randy-net-core-sln/Web/obj/Debug/netcoreapp2.0/Web.dll
+/home/randy/vscode/github/randy-net-core-sln/Web/obj/Debug/netcoreapp2.0/Web.pdb
