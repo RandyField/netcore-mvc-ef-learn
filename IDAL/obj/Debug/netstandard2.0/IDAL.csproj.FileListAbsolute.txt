@@ -1,0 +1,8 @@
+/home/randy/vscode/github/randy-net-core-sln/IDAL/bin/Debug/netstandard2.0/IDAL.deps.json
+/home/randy/vscode/github/randy-net-core-sln/IDAL/bin/Debug/netstandard2.0/IDAL.dll
+/home/randy/vscode/github/randy-net-core-sln/IDAL/bin/Debug/netstandard2.0/IDAL.pdb
+/home/randy/vscode/github/randy-net-core-sln/IDAL/obj/Debug/netstandard2.0/IDAL.csproj.CoreCompileInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/IDAL/obj/Debug/netstandard2.0/IDAL.AssemblyInfoInputs.cache
+/home/randy/vscode/github/randy-net-core-sln/IDAL/obj/Debug/netstandard2.0/IDAL.AssemblyInfo.cs
+/home/randy/vscode/github/randy-net-core-sln/IDAL/obj/Debug/netstandard2.0/IDAL.dll
+/home/randy/vscode/github/randy-net-core-sln/IDAL/obj/Debug/netstandard2.0/IDAL.pdb
