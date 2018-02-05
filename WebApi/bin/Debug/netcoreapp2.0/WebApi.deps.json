@@ -3885,6 +3885,10 @@
         }
       },
       "BLL/1.0.0": {
+        "dependencies": {
+          "MODEL": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.0.1"
+        },
         "runtime": {
           "BLL.dll": {}
         },

@@ -14,15 +14,18 @@ namespace WebApi.Controllers
 
         private readonly SchoolDbContext _context;
 
+        //ASP.NET 依赖关系注入将会负责处理传递的一个SchoolContext数据库上下文实例 插入控制器。
         public ValuesController(SchoolDbContext context)
         {
             _context=context;            
         }
+
+
         // GET api/values
         [HttpGet]
-        public IEnumerable<Student> Get()
+        public Task<List<Student>> Get()
         {
-            var Students = _context.Students.ToList();
+            var Students = _context.Students.ToListAsync();
             return Students;
             // return new string[] { "value1", "value2" };
         }
@@ -33,6 +36,7 @@ namespace WebApi.Controllers
         {
             return "value";
         }
+
 
         // POST api/values
         [HttpPost]

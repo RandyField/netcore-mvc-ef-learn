@@ -105,6 +105,7 @@ namespace Web
                             Configuration.GetConnectionString("MysqlDbConnectionString")
                             ));
 
+
             /* 连接字符串使用ConnectRetryCount=0以防止SQLClient从挂起。*/
             services.AddMvc();
 
@@ -165,6 +166,9 @@ namespace Web
             //如果是这样，它将暂停管道，并将控制权归还给上一个中间件，即异常处理程序。
             app.UseStaticFiles(); //静态页
 
+
+            app.UseAuthentication();
+  
 
             //如果 StaticFiles 中间件无法提供响应，它将调用下一个中间件，即 MVC 中间件。
             //根据指定的路由选项，此中间件会尝试将请求路由到 MVC 控制器（或 Razor 页面），rr以实现请求履行。

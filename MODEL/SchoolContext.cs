@@ -1,4 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 
 namespace MODEL
 {
@@ -33,8 +36,31 @@ namespace MODEL
         //所以在很多教程中,默认行为以单数表名形式重写在数据库上下文
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //指定实体映射数据库中的表名
             modelBuilder.Entity<Course>().ToTable("Course");
-            modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
+
+            //指定实体映射数据库中的表名
+            //指定数据列名 长度 等等
+            //Microsoft.EntityFrameworkCore.Metadata.Internal.EntityType
+            modelBuilder.Entity<Enrollment>(entity =>
+                        {
+                            entity.Property(e => e.CourseID).HasColumnName("courseid");
+                            entity.Property(e => e.Course).HasMaxLength(50);
+                            entity.ToTable("Enrollment");                      
+                        });
+
+            //等价于下面=>
+
+            //Action<EntityTypeBuilder<Enrollment>> createconstraint = (entity =>
+            //{
+            //    entity.Property(e => e.CourseID).HasColumnName("courseid");
+            //    entity.Property(e => e.Course).HasMaxLength(50);
+            //    entity.ToTable("Enrollment");
+            //});
+
+
+            //modelBuilder.Entity(createconstraint);
+
             modelBuilder.Entity<Student>().ToTable("Student");
         }
     }

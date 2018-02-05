@@ -18,6 +18,14 @@ namespace MODEL
 
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseMySQL(@"Data");
+            }
+        }
+
         public virtual DbSet<Student> Students { get; set; }
 
         // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -29,19 +37,27 @@ namespace MODEL
         //     }
         // }
 
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Entity<Student>(entity =>
+        //    {
+        //        entity.Property(e => e.ID).IsRequired();
+        //    });
+
+        //    // modelBuilder.Entity<Student>(entity =>
+        //    // {
+        //    //     entity.HasOne(d => d.FirstMidName)
+        //    //         .WithMany(p => p.)
+        //    //         .HasForeignKey(d => d.);
+        //    // });
+        //}
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Student>(entity =>
-            {
-                entity.Property(e => e.ID).IsRequired();
-            });
-
-            // modelBuilder.Entity<Student>(entity =>
-            // {
-            //     entity.HasOne(d => d.FirstMidName)
-            //         .WithMany(p => p.)
-            //         .HasForeignKey(d => d.);
-            // });
+            //映射数据库表名
+            modelBuilder.Entity<Course>().ToTable("Course");
+            modelBuilder.Entity<Enrollment>().ToTable("Enrollment");
+            modelBuilder.Entity<Student>().ToTable("Student");
         }
     }
 }
