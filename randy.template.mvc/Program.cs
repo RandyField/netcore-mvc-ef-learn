@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+
 using MODEL;
 
 namespace randy.template.mvc
@@ -16,9 +17,19 @@ namespace randy.template.mvc
     {
         public static void Main(string[] args)
         {
+            var configbuilder = new ConfigurationBuilder()
+                                    .SetBasePath(Directory.GetCurrentDirectory())
+                                    .AddJsonFile("hosting.json")
+                                    .Build();
+
             //BuildWebHost(args).Run();
 
-            var host = BuildWebHost(args);
+            // var host = BuildWebHost(args);
+
+            var host =  WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>()
+                .UseConfiguration(configbuilder)
+                .Build();
 
             // 当启动应用程序时，DbInitializer.Initialize调用EnsureCreated。
             // EnsureCreated检测到如果 DB 存在，并且如有必要将创建一个。 
@@ -40,9 +51,9 @@ namespace randy.template.mvc
             host.Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+        // public static IWebHost BuildWebHost(string[] args) =>
+        //     WebHost.CreateDefaultBuilder(args)
+        //         .UseStartup<Startup>()
+        //         .Build();
     }
 }

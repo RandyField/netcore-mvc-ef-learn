@@ -42,12 +42,12 @@ namespace MODEL
             //指定实体映射数据库中的表名
             //指定数据列名 长度 等等
             //Microsoft.EntityFrameworkCore.Metadata.Internal.EntityType
-            modelBuilder.Entity<Enrollment>(entity =>
-                        {
-                            entity.Property(e => e.CourseID).HasColumnName("courseid");
-                            entity.Property(e => e.Course).HasMaxLength(50);
-                            entity.ToTable("Enrollment");                      
-                        });
+            // modelBuilder.Entity<Enrollment>(entity =>
+            //             {
+            //                 entity.Property(e => e.CourseID).HasColumnName("courseid");
+            //                 entity.Property(e => e.Course).HasMaxLength(50);
+            //                 entity.ToTable("Enrollment");                      
+            //             });
 
             //等价于下面=>
 

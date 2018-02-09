@@ -44,5 +44,7 @@ namespace randy.template.webapi
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .Build();
+
+        
     }
 }

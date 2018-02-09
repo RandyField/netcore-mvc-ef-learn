@@ -15,6 +15,7 @@ namespace randy.template.mvc
     {
         public Startup(IConfiguration configuration)
         {
+            
             Configuration = configuration;
         }
 
@@ -23,8 +24,11 @@ namespace randy.template.mvc
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
             string connstr = Configuration.GetConnectionString("MysqlDbConnectionString");
             //取配置文件 示例 Configuration.GetSection("ConnectionStrings:MysqlDbConnectionString");
+
 
             //连接字符串传给数据库上下文的DbContextOptionsBuilder
             services.AddDbContext<SchoolContext>(option =>
@@ -45,7 +49,7 @@ namespace randy.template.mvc
             }
 
             app.UseStaticFiles();
-
+           
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

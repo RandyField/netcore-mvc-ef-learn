@@ -27,6 +27,7 @@
           "DAL": "1.0.0",
           "MODEL": "1.0.0",
           "Microsoft.AspNetCore.All": "2.0.5",
+          "Microsoft.AspNetCore.Authentication.Cookies": "2.0.1",
           "Microsoft.NETCore.App": "2.0.0",
           "MySql.Data.EntityFrameworkCore": "8.0.10-rc",
           "Newtonsoft.Json": "10.0.3"
@@ -5238,7 +5239,7 @@
     "Newtonsoft.Json/10.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wBM7i7i3U2WX0ecor4zdVGvgrwFUjuigBoHKiL+nH39fCOpCPjBY3RDqJM32edvdyTAVdjzlccHsg41+/+zpSA==",
+      "sha512": "sha512-hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
       "path": "newtonsoft.json/10.0.3",
       "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
     },

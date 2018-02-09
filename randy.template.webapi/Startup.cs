@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SocketHelper;
 using MODEL;
 
 namespace randy.template.webapi
@@ -43,6 +44,8 @@ namespace randy.template.webapi
             }
 
             app.UseMvc();
+
+            app.Map("/ws", SocketHandler.Map);
         }
     }
 }
