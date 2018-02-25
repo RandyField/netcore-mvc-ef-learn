@@ -45,14 +45,14 @@ namespace BLL
         }
 
         //获取所有
-        public IEnumerable<Student> RetriveAllEntiry(string connectionString = null)
-        {
-            using (IDbConnection conn = DapperDataBaseConfig.GetSqlConnection(connectionString))
-            {
-                string querySql = @"SELECT * FROM Student";
-                return conn.Query<Student>(querySql);
-            }
-        }
+        // public IEnumerable<Student> RetriveAllEntiry(string connectionString = null)
+        // {
+        //     using (IDbConnection conn = DapperDataBaseConfig.GetSqlConnection(connectionString))
+        //     {
+        //         string querySql = @"SELECT * FROM Student";
+        //         return conn.Query<Student>(querySql);
+        //     }
+        // }
 
         //根据主键Id获取一个用户
         public Student RetriveOndeEntiry(int id, string connectionString = null)

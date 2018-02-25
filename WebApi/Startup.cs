@@ -17,6 +17,7 @@ using Microsoft.Extensions.Logging;
 using MODEL;
 
 using Swashbuckle.AspNetCore;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace WebApi
 {
@@ -40,9 +41,9 @@ namespace WebApi
                             Configuration.GetConnectionString("MysqlDbConnectionString")
                             ));
             //添加Swagger中间件 注入应用程序管道
-            // services.AddSwaggerGen("v1",new SwaggerGenOptions{
-
-            // });
+            services.AddSwaggerGen(c=>{
+                c.SwaggerDoc("v1",new Info{Title ="My API", Version="v1"});
+            });
 
             services.AddMvc();
         }
@@ -56,6 +57,10 @@ namespace WebApi
             }
 
             app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUI(c=>{
+                c.SwaggerEndpoint("/swagger/v1/swagger.json","My API v1"); 
+            });
         }
     }
 }
