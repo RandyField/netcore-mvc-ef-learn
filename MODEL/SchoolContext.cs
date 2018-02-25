@@ -30,13 +30,13 @@ namespace MODEL
         //因为在Student中隐式引用了Course和Enrollment
         public DbSet<Student> Students{get;set;}
 
-        //在数据库创建好,EF Core创建与DbSet属性名相同的表
+        //在数据库创建好,EF Core创建与DbSet属性名 相同的表
         //属性名通常是复数形式(Students,而不是student)
         //开发人员一般是不在乎表名是否是复数形式
         //所以在很多教程中,默认行为以单数表名形式重写在数据库上下文
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //指定实体映射数据库中的表名
+            //指定实体映射数据库中的表名 如果不指定,则数据库生成为表名为Courses
             modelBuilder.Entity<Course>().ToTable("Course");
 
             //指定实体映射数据库中的表名

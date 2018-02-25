@@ -10,16 +10,16 @@ namespace WebApi.Controllers
     {
         private readonly SchoolContext _context;
 
-        // public TodoController(SchoolContext context)
-        // {
-        //     _context = context;
+        public TodoController(SchoolContext context)
+        {
+            _context = context;
 
-        //     if (_context..Count() == 0)
-        //     {
-        //         _context.TodoItems.Add(new TodoItem { Name = "Item1" });
-        //         _context.SaveChanges();
-        //     }
-        // }    
+            // if (_context..Count() == 0)
+            // {
+            //     _context.TodoItems.Add(new TodoItem { Name = "Item1" });
+            //     _context.SaveChanges();
+            // }
+        }    
         // GET api/values  
         [HttpGet]
         public IEnumerable<Student> GetAll()

@@ -16,6 +16,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using MODEL;
 
+using Swashbuckle.AspNetCore;
+
 namespace WebApi
 {
     public class Startup
@@ -30,12 +32,18 @@ namespace WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+        
             //连接字符串传给数据库上下文的DbContextOptionsBuilder
             services.AddDbContext<SchoolDbContext>(option => 
                     option.UseMySQL(
                             //读取配置文件appsetting.json获取连接字符串
                             Configuration.GetConnectionString("MysqlDbConnectionString")
                             ));
+            //添加Swagger中间件 注入应用程序管道
+            // services.AddSwaggerGen("v1",new SwaggerGenOptions{
+
+            // });
+
             services.AddMvc();
         }
 
