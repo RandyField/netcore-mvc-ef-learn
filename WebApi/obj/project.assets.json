@@ -13041,44 +13041,52 @@
     ]
   },
   "packageFolders": {
-    "/home/randy/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\Randy\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/home/randy/vscode/github/randy-net-core-sln/WebApi/WebApi.csproj",
+      "projectUniqueName": "E:\\RandyGithub\\netcore-mvc-ef-learn\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "/home/randy/vscode/github/randy-net-core-sln/WebApi/WebApi.csproj",
-      "packagesPath": "/home/randy/.nuget/packages/",
-      "outputPath": "/home/randy/vscode/github/randy-net-core-sln/WebApi/obj/",
+      "projectPath": "E:\\RandyGithub\\netcore-mvc-ef-learn\\WebApi\\WebApi.csproj",
+      "packagesPath": "C:\\Users\\Randy\\.nuget\\packages\\",
+      "outputPath": "E:\\RandyGithub\\netcore-mvc-ef-learn\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/randy/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Randy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/home/randy/vscode/github/randy-net-core-sln/MODEL/MODEL.csproj": {
-              "projectPath": "/home/randy/vscode/github/randy-net-core-sln/MODEL/MODEL.csproj"
+            "E:\\RandyGithub\\netcore-mvc-ef-learn\\DAL\\DAL.csproj": {
+              "projectPath": "E:\\RandyGithub\\netcore-mvc-ef-learn\\DAL\\DAL.csproj"
             },
-            "/home/randy/vscode/github/randy-net-core-sln/DAL/DAL.csproj": {
-              "projectPath": "/home/randy/vscode/github/randy-net-core-sln/DAL/DAL.csproj"
+            "E:\\RandyGithub\\netcore-mvc-ef-learn\\IDAL\\IDAL.csproj": {
+              "projectPath": "E:\\RandyGithub\\netcore-mvc-ef-learn\\IDAL\\IDAL.csproj"
             },
-            "/home/randy/vscode/github/randy-net-core-sln/BLL/BLL.csproj": {
-              "projectPath": "/home/randy/vscode/github/randy-net-core-sln/BLL/BLL.csproj"
+            "E:\\RandyGithub\\netcore-mvc-ef-learn\\BLL\\BLL.csproj": {
+              "projectPath": "E:\\RandyGithub\\netcore-mvc-ef-learn\\BLL\\BLL.csproj"
             },
-            "/home/randy/vscode/github/randy-net-core-sln/IDAL/IDAL.csproj": {
-              "projectPath": "/home/randy/vscode/github/randy-net-core-sln/IDAL/IDAL.csproj"
+            "E:\\RandyGithub\\netcore-mvc-ef-learn\\MODEL\\MODEL.csproj": {
+              "projectPath": "E:\\RandyGithub\\netcore-mvc-ef-learn\\MODEL\\MODEL.csproj"
             }
           }
         }
